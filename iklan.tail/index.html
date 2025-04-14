@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&display=swap" rel="stylesheet">
+    <style>
+      .hide-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <title>EsTeh</title>
+  </head>
+  <body class="overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 py-4 md:py-8 px-4 md:px-10 bg-transparent">
+      <nav class="flex justify-center space-x-4 md:space-x-10 text-white text-sm md:text-xl">
+        <a href="#Beranda" class="hover:text-orange-500">Beranda</a>
+        <a href="#About" class="hover:text-orange-500">About</a>
+        <a href="#Menu" class="hover:text-orange-500">Menu</a>
+        <a href="#Lokasi" class="hover:text-orange-500">Lokasi</a>
+        <a href="#Kontak" class="hover:text-orange-500">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section id="Beranda" class="relative w-full">
+      <img src="Kasir.png" alt="Banner Esteh" class="w-full h-screen md:h-[calc(108vh-10px)] object-cover -mt-16" />
+      <div class="absolute inset-0 flex flex-col justify-center items-center text-white text-center px-4">
+        <h1 class="text-4xl md:text-7xl drop-shadow font-bold">Segarkan Harimu <br /> dengan <span class="text-orange-500">EsTeh</span></h1>
+        <button class="mt-6 px-6 py-2 bg-white text-orange-500 font-bold rounded-full shadow hover:bg-orange-100 transition">
+          Pesan Sekarang
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="About" class="bg-white py-16 md:py-32 px-4 md:px-6">
+      <div class="container mx-auto max-w-5xl text-center">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 md:mb-10">About</h3>
+        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+          <span class="text-orange-500 font-bold">EsTeh</span> bukan sekadar minuman. 
+          Ia adalah simbol dari kesegaran, kebersamaan, dan momen-momen sederhana yang membuat hidup jadi lebih bermakna. 
+          Berawal dari semangat untuk menghadirkan sesuatu yang berbeda dalam dunia minuman teh, 
+          kami memadukan rasa klasik dengan sentuhan modern agar setiap tegukan <span class="text-orange-500 font-bold">EsTeh</span> membawa rasa nyaman sekaligus kejutan baru.
+          <br><br>
+          Kami percaya bahwa setiap orang berhak menikmati minuman yang enak, berkualitas, dan terjangkau. 
+          Oleh karena itu, kami hanya menggunakan bahan-bahan pilihan: daun teh terbaik, gula alami, dan campuran rasa yang telah melalui berbagai uji coba demi menciptakan cita rasa yang sempurna.
+          Kami mengolahnya dengan proses yang higienis dan profesional, demi menjaga kesegaran serta keaslian rasa dalam setiap gelas.
+        </p>
+        <div class="mt-8 md:mt-10 text-right pr-4">
+          <p class="text-gray-600 text-base md:text-lg italic">Salam,</p>
+          <p class="text-orange-500 font-bold text-lg md:text-xl">Arief</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="Menu" class="bg-white py-12 md:py-20 px-4 md:px-5">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 md:mb-10">Menu Kami</h3>
+        <div class="overflow-x-auto hide-scrollbar">
+          <div class="flex space-x-4 md:space-x-10 px-4 pb-4">
+            <!-- Menu 1 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Original" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Original</h4>
+              <p class="text-gray-700 text-sm md:text-base">Teh segar dengan rasa alami yang pas, menyegarkan di setiap tegukan.</p>
+            </div>
+            <!-- Menu 2 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Mango" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Mango</h4>
+              <p class="text-gray-700 text-sm md:text-base">Kombinasi teh dan mangga manis yang memberi sensasi tropis.</p>
+            </div>
+            <!-- Menu 3 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Strawberry" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Strawberry</h4>
+              <p class="text-gray-700 text-sm md:text-base">Perpaduan teh segar dengan rasa stroberi yang manis dan asam.</p>
+            </div>
+            <!-- Menu 4 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Lychee" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Lychee</h4>
+              <p class="text-gray-700 text-sm md:text-base">Kesegaran teh dengan rasa leci yang lembut dan menyegarkan.</p>
+            </div>
+            <!-- Menu 5 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Peach" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Peach</h4>
+              <p class="text-gray-700 text-sm md:text-base">Es teh dengan sentuhan rasa persik yang manis dan menyegarkan.</p>
+            </div>
+            <!-- Menu 6 -->
+            <div class="bg-white p-4 md:p-6 rounded-lg shadow-lg flex-none w-[280px] md:w-[500px]">
+              <img src="Es Teh.jpeg" alt="EsTeh Promo" class="w-full h-[200px] md:h-[400px] object-cover rounded-t-lg mb-4">
+              <h4 class="text-lg md:text-xl font-bold">EsTeh Promo</h4>
+              <p class="text-gray-700 text-sm md:text-base">Nikmati promo menarik setiap hari untuk semua jenis EsTeh!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lokasi Section -->
+    <section id="Lokasi" class="bg-white py-12 md:py-20 px-4 md:px-5">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 md:mb-10">Lokasi Kami</h3>
+        <div class="max-w-3xl mx-auto">
+          <p class="text-base md:text-lg text-gray-700 mb-6">Temukan kami di lokasi strategis di sekitar Dr. Samsul Zainal Arifin untuk menikmati EsTeh langsung. Kami selalu siap untuk memberikan pelayanan terbaik.</p>
+          <div class="mb-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12555.287428672243!2d106.8886!3d-6.1937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e694afdb6f3a7bb%3A0x6a47e17be8ab98ec!2sDr.%20Samsul%20Zainal%20Arifin%2C%20Jl.%20Pahlawan!5e0!3m2!1sen!2sid!4v1615430429473!5m2!1sen!2sid" width="100%" height="300" class="md:h-[450px]" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+          <p class="text-base md:text-lg text-gray-700">Kami sangat menantikan kunjunganmu! Jangan ragu untuk datang dan menikmati EsTeh langsung di lokasi kami.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="Kontak" class="bg-gray-100 py-12 md:py-20 px-4 md:px-5">
+      <div class="container mx-auto text-center">
+        <h3 class="text-4xl md:text-6xl font-bold mb-8 md:mb-10">Kontak Kami</h3>
+        <p class="text-base md:text-lg text-gray-700 mb-8 md:mb-10">
+          Kalo Mau Ngechat chat aja ya ngentod gausah nge spam juga yakontol
+        </p>
+        <!-- Kontak Info -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10">
+          <div class="flex flex-col items-center">
+            <a href="https://wa.me/088269059314" target="_blank" class="text-orange-500 hover:text-orange-700 mb-2 md:mb-4">
+              <img src="whatsapp-logo-icon-free-png.webp" alt="WhatsApp" class="w-12 h-12 md:w-16 md:h-16">
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="https://www.instagram.com/ackerman.js/" target="_blank" class="text-orange-500 hover:text-orange-700 mb-2 md:mb-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-12 h-12 md:w-16 md:h-16">
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="mailto:ariefalsulthan321@gmail.com" class="text-orange-500 hover:text-orange-700 mb-2 md:mb-4">
+              <img src="gmail-mail-icon-for-web-design-free-png.webp" alt="Email" class="w-12 h-12 md:w-16 md:h-16">
+            </a>
+          </div>
+          <div class="flex flex-col items-center">
+            <a href="https://github.com/arief-png" target="_blank" class="text-orange-500 hover:text-orange-700 mb-2 md:mb-4">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" class="w-12 h-12 md:w-16 md:h-16">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
